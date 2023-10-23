@@ -1,0 +1,14 @@
+# binary files
+*.out
+*.o
+*.exe
+
+# confg files
+*.ini
+
+# Compilation-related directories
+bin/
+build/
+
+# test files
+test.c

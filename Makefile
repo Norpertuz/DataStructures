@@ -1,0 +1,17 @@
+CC = gcc
+CFLAGS = -Wall -I.
+SRC_STACK = stack.c
+SRC_QUEUE = queue.c
+TARGET_STACK = stack.exe
+TARGET_QUEUE = queue.exe
+
+all: $(TARGET_STACK) $(TARGET_QUEUE)
+
+$(TARGET_STACK): $(SRC_STACK)
+	$(CC) $(CFLAGS) -o $(TARGET_STACK) $(SRC_STACK)
+
+$(TARGET_QUEUE): $(SRC_QUEUE)
+	$(CC) $(CFLAGS) -o $(TARGET_QUEUE) $(SRC_QUEUE)
+
+clean:
+	rm -f $(TARGET_STACK) $(TARGET_QUEUE)
