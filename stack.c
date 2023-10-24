@@ -85,14 +85,14 @@ int main(){
     printf("3.Display size of the stack\n");
     printf("4.Display data elements within stack\n");
     printf("5.Exit\n");
-    scanf("%c", &choice);
+    scanf(" %c", &choice);
 
     switch(choice){
         case '1':
             int data;
             printf("Enter the number: ");
             scanf("%d", &data);
-            printf("/n");
+            printf("\n");
             push(stack,data);
         break;
         case '2':
